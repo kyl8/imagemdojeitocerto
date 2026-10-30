@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Imagem do Jeito",
+  "short_name": "Imagem do Jeito",
+  "version": "1.2.0",
+  "description": "Salve imagens JFIF, WebP, AVIF e outros formatos como JPG, PNG ou GIF animado. Personalize tudo.",
+  "minimum_chrome_version": "116",
+  "permissions": ["contextMenus", "downloads", "offscreen", "storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Imagem do Jeito - Preferências",
+    "default_popup": "src/popup/popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
